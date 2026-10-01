@@ -1,0 +1,109 @@
+{
+  "dataset": "Fashion-MNIST",
+  "source": "keras.datasets.fashion_mnist",
+  "splits": {
+    "train": {
+      "count": 54000,
+      "image_shape": [
+        28,
+        28
+      ],
+      "pixel_range": [
+        0,
+        255
+      ],
+      "class_counts": {
+        "T-shirt/top": 5400,
+        "Trouser": 5400,
+        "Pullover": 5400,
+        "Dress": 5400,
+        "Coat": 5400,
+        "Sandal": 5400,
+        "Shirt": 5400,
+        "Sneaker": 5400,
+        "Bag": 5400,
+        "Ankle boot": 5400
+      },
+      "images_sha256": "205525e6b5996eece40f88d7b277441c97f17be3d0d4b82a07f43e8ad3cb307a",
+      "labels_sha256": "36d161bf58572d0aa09491e35e79914bc807ac2d6f0efa5d1283e5308c28d2b2"
+    },
+    "validation": {
+      "count": 6000,
+      "image_shape": [
+        28,
+        28
+      ],
+      "pixel_range": [
+        0,
+        255
+      ],
+      "class_counts": {
+        "T-shirt/top": 600,
+        "Trouser": 600,
+        "Pullover": 600,
+        "Dress": 600,
+        "Coat": 600,
+        "Sandal": 600,
+        "Shirt": 600,
+        "Sneaker": 600,
+        "Bag": 600,
+        "Ankle boot": 600
+      },
+      "images_sha256": "4ab47ec456261034a587f1202e77b045ee2b8a9dffd0cd826b7124343d8dc049",
+      "labels_sha256": "3df522c29cae234d79dce3c01f0721039fbe5135acaac11d78b431c8ebb839b8"
+    },
+    "test": {
+      "count": 10000,
+      "image_shape": [
+        28,
+        28
+      ],
+      "pixel_range": [
+        0,
+        255
+      ],
+      "class_counts": {
+        "T-shirt/top": 1000,
+        "Trouser": 1000,
+        "Pullover": 1000,
+        "Dress": 1000,
+        "Coat": 1000,
+        "Sandal": 1000,
+        "Shirt": 1000,
+        "Sneaker": 1000,
+        "Bag": 1000,
+        "Ankle boot": 1000
+      },
+      "images_sha256": "c867c93ff95360594e8ec3287995350b824dd110b11595c0e13d5423f621867a",
+      "labels_sha256": "3d0e6c6ea990b53b6f8f500a41cac93881d981b315f84578b7d915342ade01e9"
+    }
+  },
+  "seed": 42,
+  "validation_fraction": 0.1,
+  "class_names": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "counts": {
+    "train": 54000,
+    "validation": 6000,
+    "test": 10000
+  },
+  "split_method": "stratified train_test_split; official test reserved for final evaluation",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "tensorflow": "2.21.0",
+    "devices": [
+      "/physical_device:CPU:0"
+    ]
+  }
+}

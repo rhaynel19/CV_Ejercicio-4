@@ -1,0 +1,36 @@
+[project]
+name = "inf8239-u02-cv"
+version = "0.1.0"
+description = "Proyecto reproducible de vision para INF-8239 U02.E04"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.9,<4",
+    "numpy>=2.0,<3",
+    "scikit-learn>=1.5,<2",
+    "reportlab>=4.1,<5",
+]
+
+[project.optional-dependencies]
+cpu = ["tensorflow>=2.21,<2.22"]
+gpu = ["tensorflow[and-cuda]>=2.21,<2.22"]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29,<7",
+    "nbformat>=5.9,<6",
+    "nbconvert>=7,<8",
+    "pytest>=8.3,<9",
+    "ruff>=0.9,<1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/inf8239_u02_cv"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

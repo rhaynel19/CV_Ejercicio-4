@@ -1,0 +1,1 @@
+"""Reusable components for the U02.E04 computer vision exercise."""
