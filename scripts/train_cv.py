@@ -16,7 +16,7 @@ os.environ.setdefault("TF_DETERMINISTIC_OPS", "1")
 
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import ConfusionMatrixDisplay, classification_report, f1_score
+from sklearn.metrics import ConfusionMatrixDisplay, classification_report, confusion_matrix, f1_score
 from sklearn.model_selection import train_test_split
 
 from inf8239_u02_cv.data import CLASS_NAMES, audit_splits, normalize_images, validate_images
@@ -201,6 +201,11 @@ def main() -> None:
             "f1_macro": float(f1_score(y_test, predictions, average="macro")),
             "accuracy": float(np.mean(predictions == y_test)),
             "per_class": report,
+            "confusion_matrix": confusion_matrix(
+                y_test,
+                predictions,
+                labels=np.arange(len(CLASS_NAMES)),
+            ).tolist(),
             "parameters": int(model.count_params()),
             "model_size_bytes": int(model_path.stat().st_size),
             "train_seconds": float(training_seconds),

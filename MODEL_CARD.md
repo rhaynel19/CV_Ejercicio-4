@@ -25,7 +25,7 @@ Reportar accuracy, macro-F1 y precision/recall/F1 por clase; comparar parámetro
 
 ## Resultados observados
 
-Ejecución con semilla 42: 54 000 imágenes de entrenamiento, 6 000 de validación y 10 000 de prueba. El baseline obtuvo accuracy 0.8618 y F1 macro 0.8605, con 50 890 parámetros, 633 964 bytes, 23.7 s de entrenamiento y 0.0425 ms/imagen de inferencia. La CNN obtuvo accuracy 0.7918 y F1 macro 0.7891, con 19 466 parámetros, 268 447 bytes, 124.6 s de entrenamiento y 0.1419 ms/imagen.
+Ejecución con semilla 42: 54 000 imágenes de entrenamiento, 6 000 de validación y 10 000 de prueba. El baseline obtuvo accuracy 0.8618 y F1 macro 0.8605, con 50 890 parámetros, 633 964 bytes, 12.9 s de entrenamiento y 0.0254 ms/imagen de inferencia. La CNN obtuvo accuracy 0.7918 y F1 macro 0.7891, con 19 466 parámetros, 268 447 bytes, 187.6 s de entrenamiento y 0.1842 ms/imagen.
 
 En esta ejecución la clase con menor recall de la CNN fue `Shirt`, con 0.424. Consultar `reports/cv_metrics.json` para el reporte por clase completo y `reports/data_audit.json` para la configuración de datos/runtime.
 

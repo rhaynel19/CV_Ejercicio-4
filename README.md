@@ -26,7 +26,7 @@ uv run pytest -q
 
 ```bash
 uv run python scripts/train_cv.py --epochs 8
-uv run python scripts/build_submission_pdf.py
+uv run python scripts/build_complete_report.py
 ```
 
 Para ejecutar el notebook completo y conservar los outputs en el `.ipynb`:
@@ -34,7 +34,7 @@ Para ejecutar el notebook completo y conservar los outputs en el `.ipynb`:
 ```bash
 uv run python -m nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/U02_E04_clasificador_visual.ipynb
 uv run python scripts/normalize_notebook_metadata.py notebooks/U02_E04_clasificador_visual.ipynb
-uv run python scripts/build_submission_pdf.py
+uv run python scripts/build_complete_report.py
 ```
 
 Alternativa con pip: `python -m pip install -r requirements.txt`, y luego ejecute los mismos scripts con `python`.
