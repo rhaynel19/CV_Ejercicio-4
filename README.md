@@ -65,22 +65,9 @@ Las pruebas de datos son independientes de TensorFlow. La prueba del contrato de
 
 ## Model Card y uso responsable
 
-Complete `MODEL_CARD.md` con las métricas observadas. Fashion-MNIST es un benchmark educativo de prendas pequeñas y centradas; sus resultados no validan fotografías reales, imágenes médicas, OCR, vigilancia ni decisiones sobre personas.
+ `MODEL_CARD.md` con las métricas observadas. Fashion-MNIST es un benchmark educativo de prendas pequeñas y centradas; sus resultados no validan fotografías reales, imágenes médicas, OCR, vigilancia ni decisiones sobre personas.
 
-## Repositorio, PDF e IA
 
-El PDF detecta el remoto `origin` si existe. Sin remoto, lo declara pendiente en lugar de inventar un enlace. Publique el repositorio, configure el remoto y regenere el PDF. La declaración de IA incluida en el informe es una base: el estudiante debe corregirla para reflejar herramientas, prompts, verificaciones y correcciones efectivamente realizadas.
 
-Para registrar el trabajo:
+Los JSON, figuras y PDF dentro de `reports/` no están excluidos por `.gitignore`; 
 
-```bash
-git init
-git add .
-git commit -m "feat: build reproducible U02.E04 computer vision project"
-git remote add origin https://github.com/USUARIO/REPOSITORIO.git
-git push -u origin main
-```
-
-Los JSON, figuras y PDF dentro de `reports/` no están excluidos por `.gitignore`; incorpórelos después de producir evidencia real. Los modelos serializados y datos descargados se excluyen por tamaño.
-
-No entregue esta plantilla como corrida completa hasta ejecutar el notebook y generar las métricas, figuras y PDF en un runtime compatible.
